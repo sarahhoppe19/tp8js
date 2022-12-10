@@ -34,6 +34,14 @@
   background-color: #333;
 }
 
+.clicked .cardBack {
+  display: none;
+}
+
+.clicked .cardFront {
+  display: block;
+}
+
 .banana .cardFront {
   background-image: url(banana-front.jpg);
   background-size: cover;
