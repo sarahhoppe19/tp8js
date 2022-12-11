@@ -26,11 +26,13 @@
 .cardBack {
   background-image: url(pattern-back.jpg);
   border: 10px solid #aaa;
+  border-radius: 1vw;
 }
 
 .cardFront {
   display: none;
-  background-color: #333;
+  border: 10px solid #333;
+  border-radius: 1vw;
 }
 
 .clicked .cardBack {
