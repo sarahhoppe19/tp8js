@@ -7,7 +7,6 @@
   height: 80vh;
   position: relative;
   margin: 10vh auto;
-  border: 1px solid #ccc;
 }
 
 .card {
@@ -50,4 +49,18 @@
 .orange .cardFront {
   background-image: url(orange-front.jpg);
   background-size: cover;
+}
+
+.strawberry .cardFront {
+  background-image: url(strawberry-front.jpg);
+  background-size: cover;
+}
+
+.blueberry .cardFront {
+  background-image: url(blueberry-front.jpg);
+  background-size: cover;
+}
+
+.card.matched div {
+  display: none;
 }
