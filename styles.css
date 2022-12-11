@@ -24,8 +24,8 @@
 }
 
 .cardBack {
-  background-color: #aaa;
-  
+  background-image: url(pattern-back.jpg);
+  border: 10px solid #aaa;
 }
 
 .cardFront {
