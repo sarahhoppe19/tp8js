@@ -91,8 +91,25 @@ function checkWinning() {
   document.getElementById("mainTable").innerHTML = "You Won!";
 }
 
+function shuffleCards() {
+  table = document.querySelector("#mainTable");
+  cardCount = table.children.length;
+  
+  cardToMove = table.children[0];
+  table.appendChild(cardToMove)
+  
+  for (i = 0; i < cardCount; i++) {
+    randomCard = Math.floor(Math.random() * cardCount);
+    cardToMove = table.children[randomCard];
+    
+    table.appendChild(cardToMove);
+  }
+}
+
 //when page loads
 window.onload = function() {
+  shuffleCards();
+  
   cardList = document.getElementsByClassName("card"); //collection of cards
   
   cardCount = cardList.length; //how many cards are on the board
